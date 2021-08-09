@@ -50,6 +50,7 @@
     </v-card>
 </template>
 <script>
+
 export default({
     data: () => ({
         isLogin: false,
@@ -59,12 +60,14 @@ export default({
     }),
     methods:{
         showParameters:function (){
-           this.isLogin = true 
-        }
+           this.isLogin = true;
+           this.$store.commit('setUser',this.username) 
+           console.log(this.$store.state.user)
+        },
     },
     computed:{
         welcomeMessage: function () {
-            return 'Welcome '+this.username
+            return 'Welcome '+this.$store.getters.currentUser
         }
     }
 })
