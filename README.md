@@ -1,4 +1,5 @@
-# land-page
+# Landing Page
+Landing page to test vue js functions
 
 ## Project setup
 ```
