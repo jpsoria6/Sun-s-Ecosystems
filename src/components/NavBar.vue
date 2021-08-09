@@ -27,7 +27,9 @@
                                           {{item.title}}
                                         </v-list-item-title>
                                     </router-link>
+
                   </v-list-item>
+                 
         </v-menu>
     </v-app-bar>
 </template>
@@ -38,7 +40,8 @@ export default {
     data: () => ({
         menuItems:[
             {title: 'Home',path:'/'},
-            {title: 'About Us',path:'/about'}
+            {title: 'About Us',path:'/about'},
+            {title: 'Login', path: '/login'}
         ]
 
     })
